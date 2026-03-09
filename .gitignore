@@ -1,0 +1,8 @@
+vendor/
+target/
+.bsp/
+.idea/
+.metals/
+.vscode/
+metals.sbt
+out/
