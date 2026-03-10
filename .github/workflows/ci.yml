@@ -22,6 +22,7 @@ jobs:
           distribution: temurin
           java-version: 17
           cache: sbt
+      - uses: sbt/setup-sbt@13c2c27693f0ec4a33b1ebefd04c53c4c0ba618a # v1
       - name: Compile JVM
         run: sbt generatedJVM/compile
       - name: Compile Native
@@ -39,6 +40,7 @@ jobs:
           distribution: temurin
           java-version: 17
           cache: sbt
+      - uses: sbt/setup-sbt@13c2c27693f0ec4a33b1ebefd04c53c4c0ba618a # v1
       - name: Run integration tests
         run: sbt it/test
 
@@ -58,6 +60,7 @@ jobs:
           distribution: temurin
           java-version: 17
           cache: sbt
+      - uses: sbt/setup-sbt@13c2c27693f0ec4a33b1ebefd04c53c4c0ba618a # v1
       - name: Publish
         run: sbt ci-release
         env:
