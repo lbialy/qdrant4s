@@ -20,7 +20,7 @@ inThisBuild(
         "scm:git:git@github.com:lbialy/qdrant4s.git"
       )
     ),
-    sonatypeCredentialHost := "s01.oss.sonatype.org",
+
   )
 )
 
